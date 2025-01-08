@@ -1,5 +1,6 @@
 {
   "greeting": "Selamat Pagi",
   "forgotPassword": "Lupa Kata Sandi?",
-  "signIn": "Masuk"
+  "signIn": "Masuk",
+  "rememberMe": "Ingat saya"
 }

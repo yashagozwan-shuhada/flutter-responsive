@@ -1,5 +1,6 @@
 {
   "greeting": "Good Morning",
   "forgotPassword": "Forgot Password?",
-  "signIn": "Sign In"
+  "signIn": "Sign In",
+  "rememberMe": "Remember me"
 }

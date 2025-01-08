@@ -4,5 +4,6 @@ abstract class  LocaleKeys {
   static const greeting = 'greeting';
   static const forgotPassword = 'forgotPassword';
   static const signIn = 'signIn';
+  static const rememberMe = 'rememberMe';
 
 }

@@ -61,18 +61,25 @@ class SignInPage extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: CheckboxListTile(
-                        splashRadius: 16.sp,
-                        contentPadding: EdgeInsets.zero,
-                        controlAffinity: ListTileControlAffinity.leading,
-                        value: true,
-                        onChanged: (e) {},
-                        title: Text(
-                          'Remember me',
-                          style: TextStyle(
-                            fontSize: 16.sp,
+                      child: Row(
+                        children: [
+                          Transform.scale(
+                            scale: 4.sp,
+                            child: Checkbox(
+                              value: true,
+                              onChanged: (value) {},
+                            ),
                           ),
-                        ),
+                          SizedBox(
+                            width: 1.w,
+                          ),
+                          Text(
+                            LocaleKeys.forgotPassword.tr(),
+                            style: TextStyle(
+                              fontSize: 16.sp,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     TextButton(
@@ -81,7 +88,7 @@ class SignInPage extends StatelessWidget {
                           fontSize: 16.sp,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: null,
                       child: Text(LocaleKeys.forgotPassword.tr()),
                     ),
                   ],
@@ -92,7 +99,9 @@ class SignInPage extends StatelessWidget {
                     textStyle: TextStyle(fontSize: 16.sp),
                     padding: EdgeInsets.all(16.sp),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    /// todo: do action
+                  },
                   child: Text(LocaleKeys.signIn.tr()),
                 ),
               ],
